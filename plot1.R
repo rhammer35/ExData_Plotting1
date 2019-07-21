@@ -7,3 +7,12 @@ power_data$Date <- as.Date(power_data$Date, "%d/%m/%Y")
 ## Subsets data into desired dataset
 power_data1 <- subset(power_data, Date == '2007-02-01' | Date == '2007-02-02')
 
+## Initialize png plotting device
+png(filename = "plot1.png")
+
+## Create histogram with given characteristics to match example in assignment
+hist(as.numeric(power_data1$Global_active_power), xlab = "Global Active Power (kilowatts", col = "Red", main = "Global Active Power")
+
+## End plotting device
+dev.off()
+
