@@ -17,7 +17,7 @@ power_data1$Date_Time <- strptime(power_data1$Date_Time, format = "%d/%m/%Y %H:%
 png(filename = "plot2.png")
 
 ## Create line graph with given characteristics to match example in assignment
-plot(power_data1$Date_Time, power_data1$Global_active_power, type = "l", ylab = "Global Active Power (kilowatts", xlab = "")
+plot(power_data1$Date_Time, power_data1$Global_active_power, type = "l", ylab = "Global Active Power (kilowatts)", xlab = "")
 
 ## End plotting device
 dev.off()
