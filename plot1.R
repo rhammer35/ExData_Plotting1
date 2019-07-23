@@ -1,7 +1,7 @@
 ## Reads data into data frame from intial txt file in working directory
 power_data <- read.csv2("household_power_consumption.txt", header = TRUE, sep = ";", dec = ".", colClasses = "character")
 
-## Converts data in column to date class
+## Converts data in Date column to date class
 power_data$Date <- as.Date(power_data$Date, "%d/%m/%Y")
 
 ## Subsets data into desired dataset
